@@ -1,13 +1,11 @@
 # Contribution Log
 
-**Team name:**
+**Team name:** Phones vs. Sleep
 
-**Members:**
-
-Update this log as you work (not all at once before the deadline). Non-code work counts too: data cleaning, design, wireframing, writing, and research all belong here. Delete the example rows before your first entry.
+**Members:** Saoud, Amen, Thethe
 
 | Date | Member | Contribution | Related commit/PR (if any) |
 | --- | --- | --- | --- |
-| Nov 2 | Jordan | Cleaned eviction dataset, built data loader | #3 |
-| Nov 4 | Sam | Built choropleth map component | #4 |
-| Nov 5 | Both | Drafted interim report together | — |
+| Nov 19 | Team | Chose topic and wrote project proposal (issue, questions, data sources, chart plan) | — |
+| Nov 22 | Team | Prepared Kaggle dataset and built sleep vs. mental health bar chart in Tableau | — |
+| Nov 23 | Team | Set up GitHub repo, built home page with embedded chart and key-finding annotation, deployed to Vercel | Add sleep vs mental health page |
