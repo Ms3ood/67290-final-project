@@ -4,7 +4,8 @@ export default {
   pages: [
     {name: "1. How big is the problem?", path: "/sleep-trends"},
     {name: "2. Is phone use connected?", path: "/screens-and-sleep"},
-    {name: "3. Why does it matter?", path: "/sleep-mental-health"}
+    {name: "3. Why does it matter?", path: "/sleep-mental-health"},
+    {name: "Final Report", path: "/report"}
   ],
   head: '<link rel="icon" href="observable.png" type="image/png" sizes="32x32">',
   root: "src",
