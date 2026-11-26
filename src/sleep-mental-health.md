@@ -14,7 +14,7 @@ toc: false
 <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
 
 <div class="grid grid-cols-1">
-  <tableau-viz id="tableau-sleep-mental-health" src="https://public.tableau.com/views/saoude-final-project/Dashboard1" toolbar="bottom" hide-tabs width="1000" height="650"></tableau-viz>
+  <tableau-viz id="tableau-sleep-mental-health" src="https://public.tableau.com/views/saoude-final-project/Dashboard1" toolbar="bottom" hide-tabs width="1000" height="1030"></tableau-viz>
 </div>
 
 <small>Data: Mental health: Kaggle, "Student Social Media & Mental Health Impact" (5,000 students; appears partly simulated, so illustrative). Grades: CDC Youth Risk Behavior Survey 2019, U.S. high school students. Both charts show correlation, not proof that short sleep causes worse mental health or grades.</small>
