@@ -1,56 +1,34 @@
-# Final Project
+# Phones vs. Sleep
 
-**Start here:** read [INSTRUCTIONS.md](./INSTRUCTIONS.md) for the full project instructions and [timeline.md](./timeline.md) for the phase schedule.
-https://final-project-starter-repo-2026.vercel.app/phones-vs-sleep.html
+**Live dashboard:** https://phones-vs-sleep.vercel.app/
 
-This is an [Observable Framework](https://observablehq.com/framework) app. To start the local preview server, run:
+Final project for 67-290 Storytelling with Data (CMU-Qatar, Fall 2026).
+Team: Amen, Saoud, Théthé.
+
+## The story
+
+Most students don't get enough sleep, and heavy phone use often comes with it. The dashboard answers three questions:
+
+1. **How big is the problem?** How many teens get enough sleep, and how that has changed over time.
+2. **Is phone use connected?** Whether students who use social media more sleep less.
+3. **Why does it matter?** How short sleep connects to mental health and grades.
+
+The [final report](https://phones-vs-sleep.vercel.app/report.html) explains our findings, design choices, and limitations.
+
+## Data
+
+- [CDC Youth Risk Behavior Survey (YRBS)](https://www.cdc.gov/yrbs/data/index.html): national survey of US high school students (weighted).
+- [Kaggle "Student Social Media & Mental Health Impact"](https://www.kaggle.com/datasets/shivasingh4945/student-social-media-and-mental-health-impact): student-level data, partly simulated, used only to illustrate patterns.
+
+Charts are built in Tableau Public and embedded in an Observable Framework site.
+
+## Run locally
 
 ```
+npm install
 npm run dev
 ```
 
-Then visit <http://localhost:3000> to preview your app.
+Then open http://localhost:3000.
 
-For more, see <https://observablehq.com/framework/getting-started>.
-
-## Project structure
-
-A typical Framework project looks like this:
-
-```ini
-.
-├─ src
-│  ├─ components
-│  │  └─ timeline.js           # an importable module
-│  ├─ data
-│  │  ├─ launches.csv.js       # a data loader
-│  │  └─ events.json           # a static data file
-│  ├─ example-dashboard.md     # a page
-│  ├─ example-report.md        # another page
-│  └─ index.md                 # the home page
-├─ .gitignore
-├─ observablehq.config.js      # the app config file
-├─ package.json
-└─ README.md
-```
-
-**`src`** - This is the “source root” — where your source files live. Pages go here. Each page is a Markdown file. Observable Framework uses [file-based routing](https://observablehq.com/framework/routing), which means that the name of the file controls where the page is served. You can create as many pages as you like. Use folders to organize your pages.
-
-**`src/index.md`** - This is the home page for your app. You can have as many additional pages as you’d like, but you should always have a home page, too.
-
-**`src/data`** - You can put [data loaders](https://observablehq.com/framework/loaders) or static data files anywhere in your source root, but we recommend putting them here.
-
-**`src/components`** - You can put shared [JavaScript modules](https://observablehq.com/framework/javascript/imports) anywhere in your source root, but we recommend putting them here. This helps you pull code out of Markdown files and into JavaScript modules, making it easier to reuse code across pages, write tests and run linters, and even share code with vanilla web applications.
-
-**`observablehq.config.js`** - This is the [app configuration](https://observablehq.com/framework/config) file, such as the pages and sections in the sidebar navigation, and the app’s title.
-
-## Command reference
-
-| Command           | Description                                              |
-| ----------------- | -------------------------------------------------------- |
-| `npm install`            | Install or reinstall dependencies                        |
-| `npm run dev`        | Start local preview server                               |
-| `npm run build`      | Build your static site, generating `./dist`              |
-| `npm run deploy`     | Deploy your app to Vercel (production)                   |
-| `npm run clean`      | Clear the local data loader cache                        |
-| `npm run observable` | Run commands like `observable help`                      |
+See [CONTRIBUTIONS.md](./CONTRIBUTIONS.md) for who did what.
