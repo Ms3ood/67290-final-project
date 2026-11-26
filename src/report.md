@@ -54,9 +54,13 @@ Do students who spend more time on social media sleep less? Page 1 shows that mo
 
 <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
 
-<tableau-viz id="report-q2-bar" src="https://public.tableau.com/views/PhonesvsSleep-SocialMediaandSleep/CDCbar" toolbar="hidden" hide-tabs width="100%" height="380"></tableau-viz>
+<div class="grid grid-cols-1">
+<tableau-viz id="report-q2-bar" src="https://public.tableau.com/views/PhonesvsSleep-SocialMediaandSleep/CDCbar" toolbar="hidden" hide-tabs width="100%" height="500"></tableau-viz>
+</div>
 
-<tableau-viz id="report-q2-scatter" src="https://public.tableau.com/views/PhonesvsSleep-SocialMediaandSleep/Kagglescatter" toolbar="hidden" hide-tabs width="100%" height="560"></tableau-viz>
+<div class="grid grid-cols-1">
+<tableau-viz id="report-q2-scatter" src="https://public.tableau.com/views/PhonesvsSleep-SocialMediaandSleep/Kagglescatter" toolbar="hidden" hide-tabs width="100%" height="600"></tableau-viz>
+</div>
 
 - **Heavy users sleep the least.** Only 20% of teens who check social media about once an hour or more sleep 8+ hours, compared with 37% of teens who don't use it.
 - **Short sleep is most common among heavy users.** About half (51%) of the heaviest users sleep 6 hours or less, compared with 38% of non-users.
@@ -113,12 +117,14 @@ How is short sleep connected to mental health and grades? Pages 1 and 2 show tha
 - **One highlighted bar per chart:** the short-sleep group (under 6 hours) and the lowest-grades group stand out in color; everything else is grey, so the eye goes straight to the key bar.
 - **One annotation per chart** states the main finding, so viewers don't have to read every bar.
 - **Interactivity with a purpose:** a "daily phone use" filter changes the mental health chart. Each bar is labeled with its share of students, so switching from light to heavy users shows the short-sleep group growing from almost 0% to 63%. This connects phones, sleep, and mental health in one click.
+- **Less clutter:** no legends, gridlines, or filters that the data can't support. We removed a stress chart to keep the page focused, and we left the grades chart without filters because the CDC data can't be split by phone use or gender.
 
 ### Limitations
 
 - **Correlation, not causation.** Short sleep, worse mental health, and lower grades go together, but this data cannot show that one causes the other. Stress, for example, could affect sleep and mental health at the same time.
 - **Two different groups.** The mental health data covers mostly university students from many countries; the grades data covers US high school students.
 - **Grades come from summary data only,** so we can't combine grades with phone use or mental health for the same students.
+- **The Kaggle data looks partly simulated,** and the mental health score is self-rated, so we treat those results as illustrative.
 
 ## 6. Conclusion and what students can do
 
