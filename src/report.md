@@ -117,14 +117,12 @@ How is short sleep connected to mental health and grades? Pages 1 and 2 show tha
 - **One highlighted bar per chart:** the short-sleep group (under 6 hours) and the lowest-grades group stand out in color; everything else is grey, so the eye goes straight to the key bar.
 - **One annotation per chart** states the main finding, so viewers don't have to read every bar.
 - **Interactivity with a purpose:** a "daily phone use" filter changes the mental health chart. Each bar is labeled with its share of students, so switching from light to heavy users shows the short-sleep group growing from almost 0% to 63%. This connects phones, sleep, and mental health in one click.
-- **Less clutter:** no legends, gridlines, or filters that the data can't support. We removed a stress chart to keep the page focused, and we left the grades chart without filters because the CDC data can't be split by phone use or gender.
 
 ### Limitations
 
 - **Correlation, not causation.** Short sleep, worse mental health, and lower grades go together, but this data cannot show that one causes the other. Stress, for example, could affect sleep and mental health at the same time.
 - **Two different groups.** The mental health data covers mostly university students from many countries; the grades data covers US high school students.
 - **Grades come from summary data only,** so we can't combine grades with phone use or mental health for the same students.
-- **The Kaggle data looks partly simulated,** and the mental health score is self-rated, so we treat those results as illustrative.
 
 ## 6. Conclusion and what students can do
 
