@@ -1,6 +1,7 @@
 # Final Project
 
 **Start here:** read [INSTRUCTIONS.md](./INSTRUCTIONS.md) for the full project instructions and [timeline.md](./timeline.md) for the phase schedule.
+https://final-project-starter-repo-2026.vercel.app/phones-vs-sleep.html
 
 This is an [Observable Framework](https://observablehq.com/framework) app. To start the local preview server, run:
 
