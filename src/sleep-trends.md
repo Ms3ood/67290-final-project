@@ -10,7 +10,7 @@ Explore how many teenagers get enough sleep, and how that has changed over time.
 <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
 
 <div class="grid grid-cols-1">
-  <tableau-viz id="tableau-sleep-trends" src="https://public.tableau.com/views/Phonesvs_Sleep-TeenSleepTrends/Dashboard1" toolbar="bottom" hide-tabs style="width: 1000px; height: 827px;"></tableau-viz>
+  <tableau-viz id="tableau-sleep-trends" src="https://public.tableau.com/views/Phonesvs_Sleep-TeenSleepTrends/Dashboard1" toolbar="bottom" hide-tabs width="1000" height="827"></tableau-viz>
 </div>
 
 <small>Data: CDC Youth Risk Behavior Survey (YRBS).</small>
