@@ -5,13 +5,35 @@ toc: true
 
 # Phones vs. Sleep: Final Report
 
+This report explains the story behind our dashboard: what we looked at, what we found, and how we designed the charts.
+
 ## 1. The issue
 
-*To be written by the team: why sleep loss among students matters and the message we want to share.*
+Most students are not getting enough sleep. In 2025, only about 1 in 4 US high school students slept 8 or more hours on a school night, which is the amount experts recommend for teens. At the same time, more than a third of students said they use social media almost every hour.
+
+This matters because sleep affects almost everything else in a student's life. Short sleep is linked to worse mental health, lower grades, and more trouble focusing in class. Because it is so common, many students see being tired as normal.
+
+**Our message:** sleep loss among young people has become normal, and heavy phone use often comes with it. The good news is that phone habits are something students can actually change, even if it is not easy.
+
+**Our audience:** high school and university students, who use their phones the most and sleep the least. We also hope parents and school wellness offices can use these findings in conversations and sleep awareness campaigns.
 
 ## 2. Data
 
-*To be written by the team: short overview of both datasets (CDC YRBS and Kaggle), what each contains, and why we trust or limit each one.*
+We used two datasets. Each one has a clear job in our story.
+
+| | CDC Youth Risk Behavior Survey (YRBS) | Kaggle "Student Social Media & Mental Health Impact" |
+| --- | --- | --- |
+| **Who** | US high school students | About 5,000 students aged roughly 18 to 24, from many countries |
+| **What it measures** | Sleep on school nights, social media use, grades, mental health | Daily social media hours, sleep hours, stress, mental health score, platform |
+| **How we use it** | Our main evidence for all claims | An illustration that shows individual students |
+| **Why we trust it** | Run by the CDC, large national sample, weighted to represent all US high school students | Clear variables at the student level, but no published method |
+| **Limits** | Self-reported; some questions change between survey years | Appears partly simulated, so we never use it for a main claim |
+
+**Ethics:** both datasets are public and anonymous, so no student can be identified. We avoid blaming individuals, and we state on every page that our data shows correlation, not causation.
+
+**Sources:**
+- [CDC YRBS data and documentation](https://www.cdc.gov/yrbs/data/index.html)
+- [Kaggle dataset](https://www.kaggle.com/datasets/shivasingh4945/student-social-media-and-mental-health-impact)
 
 ## 3. How big is the problem? (Q1)
 
@@ -32,9 +54,9 @@ Do students who spend more time on social media sleep less? Page 1 shows that mo
 
 <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
 
-<div class="grid grid-cols-1">
-<tableau-viz id="report-social-media-sleep" src="https://public.tableau.com/views/PhonesvsSleep-SocialMediaandSleep/Dashboard1" toolbar="bottom" hide-tabs width="1000" height="827"></tableau-viz>
-</div>
+<tableau-viz id="report-q2-bar" src="https://public.tableau.com/views/PhonesvsSleep-SocialMediaandSleep/CDCbar" toolbar="hidden" hide-tabs width="100%" height="380"></tableau-viz>
+
+<tableau-viz id="report-q2-scatter" src="https://public.tableau.com/views/PhonesvsSleep-SocialMediaandSleep/Kagglescatter" toolbar="hidden" hide-tabs width="100%" height="560"></tableau-viz>
 
 - **Heavy users sleep the least.** Only 20% of teens who check social media about once an hour or more sleep 8+ hours, compared with 37% of teens who don't use it.
 - **Short sleep is most common among heavy users.** About half (51%) of the heaviest users sleep 6 hours or less, compared with 38% of non-users.
