@@ -14,7 +14,7 @@ toc: false
 <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
 
 <div class="grid grid-cols-1">
-  <tableau-viz id="tableau-sleep-mental-health" src="https://public.tableau.com/views/saoude-final-project/Dashboard1" toolbar="bottom" hide-tabs width="100%" height="900"></tableau-viz>
+  <tableau-viz id="tableau-sleep-mental-health" src="https://public.tableau.com/views/saoude-final-project/Dashboard1" toolbar="bottom" hide-tabs width="100%" height="1050"></tableau-viz>
 </div>
 
 <small>Note: these charts show a correlation, not proof that short sleep causes worse mental health or grades. The mental health data appears partly simulated, so treat it as illustrative.</small>
