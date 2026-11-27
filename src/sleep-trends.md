@@ -20,8 +20,14 @@ theme: [near-midnight, wide]
 <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
 
 <div class="grid grid-cols-1">
-  <tableau-viz id="tableau-sleep-trends" src="https://public.tableau.com/views/Phonesvs_Sleep-TeenSleepTrends/Dashboard1" toolbar="bottom" hide-tabs width="1000" height="827"></tableau-viz>
+  <tableau-viz id="tableau-sleep-trends" class="fit-1000" src="https://public.tableau.com/views/Phonesvs_Sleep-TeenSleepTrends/Dashboard1" toolbar="bottom" hide-tabs width="1000" height="827"></tableau-viz>
 </div>
+
+<script type="module">
+const fitTableau = () => document.querySelectorAll("tableau-viz.fit-1000").forEach((v) => { v.style.zoom = Math.min(1, v.parentElement.clientWidth / 1000); });
+fitTableau();
+addEventListener("resize", fitTableau);
+</script>
 
   <section class="story-section" aria-labelledby="trend-heading">
     <p class="section-label">Interpreting the pattern</p>
