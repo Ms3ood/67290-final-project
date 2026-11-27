@@ -37,7 +37,47 @@ We used two datasets. Each one has a clear job in our story.
 
 ## 3. How big is the problem? (Q1)
 
-*To be written by the Q1 owner, following the same structure as Q2 below.*
+### The question
+
+How common is sleep loss among teens, and has it changed over the past ten years? This is the starting point for our story: before asking why students sleep too little, we need to show how many of them do.
+
+### The data we used
+
+- **CDC YRBS 2015–2025** (US high school students): the share of students who sleep 8 or more hours on an average school night, for each survey year (2015, 2017, 2019, 2021, 2023 and 2025). We used the survey's weights, so the percentages represent all US high school students. This is our main evidence.
+
+### What we found
+
+<script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+
+<div class="grid grid-cols-1">
+<tableau-viz id="report-sleep-trends" src="https://public.tableau.com/views/Phonesvs_Sleep-TeenSleepTrends/Dashboard1" toolbar="bottom" hide-tabs width="100%" height="827"></tableau-viz>
+</div>
+
+- **Most teens don't get enough sleep.** In 2025, only 24.3% of students slept 8+ hours on a school night. That means about 3 in 4 students sleep less than recommended.
+- **It got worse before it got better.** The share fell from 27.3% in 2015 to 22.1% in 2019, the lowest point in the series. That is a drop of 5.2 percentage points in four years.
+- **The recovery is slow and incomplete.** Since 2019, the share has risen a little each survey: 22.7% in 2021, 23.2% in 2023 and 24.3% in 2025. Even so, it is still below the 2015 level.
+- **Short sleep is the norm, not the exception.** In every year we looked at, more than 7 in 10 students slept less than 8 hours.
+
+**Answer:** sleep loss is very common. Most US high school students don't get enough sleep, and this has stayed true for the past ten years.
+
+### How we designed the chart
+
+- **Line chart:** the question is about change over time, and a line makes the drop and the slow recovery easy to see at a glance.
+- **Y-axis starts at 0%** so the decline is not exaggerated.
+- **Direct labels:** each point shows its value, so viewers don't need to read the axis.
+- **One highlighted point:** 2019 is shown as a larger orange dot on a blue line, so the eye goes straight to the lowest point.
+- **One annotation** states the main finding ("2019: the lowest point in the series"), so viewers don't have to work it out themselves.
+- **Interactivity with a purpose:** one dropdown switches the line between students who sleep 8+ hours and those who sleep under 8 hours, so viewers can see the problem from both sides. A second dropdown lets viewers highlight any survey year, and the orange dot moves to that year. Tooltips show the exact value for each year.
+- **Less clutter:** we hid the extra size legend and kept only what helps answer the question (data-ink ratio).
+
+### Limitations
+
+- **Self-reported data.** Students estimate their own sleep, so the numbers may not be exact.
+- **The question changed slightly in some years.** In 2015 and 2019, the sleep question was worded a little differently than in other years. Some of the change in those years may come from the wording, not from a real change in sleep.
+- **School nights only.** The survey does not measure weekend sleep.
+- **US high school students only.** The results may not apply to university students or to students in other countries.
+- **Gaps between surveys.** The survey runs every two years, so we can't see what happened in between.
+- **Small changes may not be real.** The numbers are estimates with a margin of error, so differences of less than one percentage point, such as 22.7% to 23.2%, may not be meaningful.
 
 ## 4. Is phone use connected? (Q2)
 
