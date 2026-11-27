@@ -50,8 +50,14 @@ How common is sleep loss among teens, and has it changed over the past ten years
 <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
 
 <div class="grid grid-cols-1">
-<tableau-viz id="report-sleep-trends" src="https://public.tableau.com/views/Phonesvs_Sleep-TeenSleepTrends/Dashboard1" toolbar="bottom" hide-tabs width="100%" height="827"></tableau-viz>
+<tableau-viz id="report-sleep-trends" class="fit-1000" src="https://public.tableau.com/views/Phonesvs_Sleep-TeenSleepTrends/Dashboard1" toolbar="bottom" hide-tabs width="1000" height="827"></tableau-viz>
 </div>
+
+<script type="module">
+const fitTableau = () => document.querySelectorAll("tableau-viz.fit-1000").forEach((v) => { v.style.zoom = Math.min(1, v.parentElement.clientWidth / 1000); });
+fitTableau();
+addEventListener("resize", fitTableau);
+</script>
 
 - **Most teens don't get enough sleep.** In 2025, only 24.3% of students slept 8+ hours on a school night. That means about 3 in 4 students sleep less than recommended.
 - **It got worse before it got better.** The share fell from 27.3% in 2015 to 22.1% in 2019, the lowest point in the series. That is a drop of 5.2 percentage points in four years.
